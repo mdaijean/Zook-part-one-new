@@ -1,16 +1,14 @@
-*
-{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.grid
-{
+.grid {
   display: grid;
 }
 
-.logo > img{
+.logo > img {
   padding-bottom: 5px;
 }
 
@@ -20,176 +18,136 @@
 } */
 
 body {
-font-family: Bungee;
-} 
-
-header {
-    color: #7944e6; 
+  padding: 0 20px;
+  font-family: "Bungee", cursive;
 }
 
-nav{
+header {
+  color: #7944e6;
+}
+
+nav {
+  display: flex;
   width: 100%;
+  margin: 5px 0;
+  justify-content: space-between;
 }
 
 ul {
-    list-style-type: none;
-    padding-right: 2em; 
-    float: right;
-  margin-top: -50px; 
-  word-spacing: 1em; 
+  list-style-type: none;
+}
 
-  }
-  
-  li {
-    display: inline;
-    font-size: 15px;
-    padding: 0 15px; 
-  }
-  li:hover {
-    color: #10fdff 
-  }
+li {
+  display: inline;
+  font-size: 12px;
+  margin-left: 10px;
+}
+a:hover {
+  color: #10fdff;
+}
 
-  .logo > img {
-    height: 80px;
-  display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-    margin-top: 15px;
-
-  }
+.logo {
+  height: 45px;
+}
 
 .icecream-truck {
-  text-align: center; 
+  text-align: center;
 }
-  .icecream-truck > img {
-    height: 120px; 
-    margin-top: 35px;
- 
-}
-
-  section {
-    background-color: #ff00ff;
-    align-items: center; 
-    line-height: 130%; 
-    
-  }
-
-.COFFEE {
-  border: 6px solid #7944e6; 
-height: 400px;
-
+.icecream-truck > img {
+  height: 120px;
+  margin-top: 35px;
 }
 
 .main {
-max-width: 75%;
-width: 50%;
-text-align: center;
-margin-left: 250px;
+  max-width: 75%;
+  width: 50%;
+  text-align: center;
+  margin-left: 250px;
 }
 
-body > div > div.COFFEE > img { 
+body > div > div.COFFEE > img {
   height: 200px;
-  
-}
-
-.CREAM {
-  border: 6px solid #7944e6; 
-  height: 400px;
-
 }
 
 body > div > div.CREAM > img {
   height: 200px;
 }
 
-.COOKIE {
-  border: 6px solid #7944e6;
-  height: 400px;
-}
-
 body > div > div.COOKIE > img {
-    height: 200px; 
-}   
-
-summary { 
-  color: #7944e6; 
-
+  height: 200px;
 }
 
-
-@media (min-width: 400px) {
-    body {
-      width: 100%;
-    }
-    header { 
-      /* width:  45%; */ 
-      width: 100%;
-      font-size: 9px;
-      padding: 0em;
-    }
-
-    nav{
-      width: 100%
-    };
-
-    #hero {
-      padding-top: 20px;
-      
-    }
-
-    #hero > p {
-      padding: 15px;
-
-    }
-
-  .main {
-    /* margin-left: 45px; */
-    margin: 20px auto;
-    width: 250px; 
-  }
-
-  .COFFEE { 
-    margin-bottom: 25px;
-  }
-
-  .CREAM {
-    margin-bottom: 25px;
-  }
-
-  .COOKIE {
-    margin-bottom: 25px;
-  }
+summary {
+  color: #7944e6;
 }
 
-@media (min-width: 992)
-{
-
+nav {
+  width: 100%;
 }
 
-@media (max-width:1280px) {
-  .grid { 
-    display: grid;
-  }
+#hero {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  background-color: #ff00ff;
+  line-height: 130%;
+}
 
-  .grid-col-3 {
-    grid-template-columns: 1fr 1fr 1fr;
-    
+#hero > p {
+}
+
+.main {
+  /* margin-left: 45px; */
+  margin: 20px auto;
+  width: 250px;
+}
+
+.card {
+  margin-bottom: 25px;
+  text-align: center;
+  width: 250px;
+  border: 6px solid #7944e6;
+}
+
+.one {
+  color: #7944e6;
+  text-decoration: none;
+}
+
+.cards {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
   }
-  .grid-col-2 {
-    grid-template-columns: 1fr 1fr;
-    
+  #hero {
+    flex-direction: row;
+    align-items: center;
+  }
+  .icecream-truck > img {
+    height: 225px;
+    margin-right: 100px;
+    margin-left: 100px;
   }
 
   .main {
-    width: 80%; 
-    margin: 0 auto; 
+    width: 80%;
+    margin: 0 auto;
   }
 
   .main > div {
-margin: 20px;
+    margin: 20px;
   }
 
- ul {
-   word-spacing: 5px; 
- }
+  ul {
+    word-spacing: 5px;
+  }
 }
